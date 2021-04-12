@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-		prueba funciona
+		
 		<table class="w3-table-all w3-hoverable" >
 			<tr th:each="list:${rockbanddesdeControlador}">
 			
-				<td th:text="${rockBand.name}"></td>
+				<td th:text="${list.name}"></td>
 			</tr>
 		</table>
 </body>

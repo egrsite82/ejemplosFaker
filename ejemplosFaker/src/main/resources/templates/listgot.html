@@ -6,9 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-		prueba funciona
+		
 		<table class="w3-table-all w3-hoverable" >
-			<tr th:each="list:${gameofthronesdesdeControlador}">
+			<tr th:each="gameOfThrones:${gameofthronesdesdeControlador}">
 			
 				<td th:text="${gameOfThrones.character}"></td>
 				<td th:text="${gameOfThrones.city}"></td>
