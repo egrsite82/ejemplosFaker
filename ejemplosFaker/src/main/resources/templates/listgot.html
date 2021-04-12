@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+		prueba funciona
+		<table class="w3-table-all w3-hoverable" >
+			<tr th:each="list:${gameofthronesdesdeControlador}">
+			
+				<td th:text="${gameOfThrones.character}"></td>
+				<td th:text="${gameOfThrones.city}"></td>
+				<td th:text="${gameOfThrones.dragon}"></td>
+				<td th:text="${gameOfThrones.house}"></td>
+				<td th:text="${gameOfThrones.quote}"></td>
+			</tr>
+		</table>
+</body>
+</html>
+
+
